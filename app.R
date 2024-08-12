@@ -24,6 +24,8 @@ ui <- fluidPage(
   )
 )
 
+cat(“\n\n\nMY LOG TEST\n”, file= stderr())
+
 server <- function(input, output) {
   story <- eventReactive(input$submit, {
     generate_story(input$noun1, input$verb, input$adjective, input$adverb)
