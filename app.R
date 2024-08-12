@@ -24,7 +24,7 @@ ui <- fluidPage(
   )
 )
 
-cat(“\n\n\nMY LOG TEST\n”, file= stderr())
+cat("\n\n\nMY LOG TEST\n", file= stderr())
 
 server <- function(input, output) {
   story <- eventReactive(input$submit, {
